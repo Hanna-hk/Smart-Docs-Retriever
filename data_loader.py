@@ -54,7 +54,8 @@ def make_chunks(directory):
                                 }
                             )
                             i+=1
-        output_path = directory+"processed/data.json"
+        output_path = os.getcwd()+"/data/processed/data.json"
+        print(output_path)
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, "w") as f:
             json.dump(info, f, indent=2, ensure_ascii=False)

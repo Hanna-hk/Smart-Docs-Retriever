@@ -113,7 +113,7 @@
     "data: ": "SECTION 1: SAFETY PRECAUTIONS High-pressure fluid injection can cause severe injury. Always depressurize the system before loosening fittings. Personal Protective Equipment (PPE), including safety glasses and steel-toed boots, is mandatory within 5 meters of the unit during operation.",
     "metadata": {
       "type: ": "header",
-      "created": "2025-12-09 20:08:34"
+      "created": "2025-12-09 20:17:50"
     }
   },
   {
@@ -122,7 +122,7 @@
     "data: ": "SECTION 2: STARTUP SEQUENCE 1. Check the oil level in the reservoir. It must be between the minimum and maximum markers on the sight glass. 2. Open the suction valve completely to prevent pump cavitation. 3. Ensure the pressure relief valve is set to the minimum setting before starting the electric motor. 4. Initiate the motor start sequence. Listen for abnormal sounds. If a high-pitched whine is heard, stop immediately; this indicates aeration.",
     "metadata": {
       "type: ": "header",
-      "created": "2025-12-09 20:08:34"
+      "created": "2025-12-09 20:17:50"
     }
   },
   {
@@ -131,7 +131,7 @@
     "data: ": "SECTION 3: OPERATING PARAMETERS The nominal operating pressure is 250 bar. The system is designed to operate with ISO VG 46 hydraulic oil. Thermal Management: The optimal operating temperature range is 40°C to 60°C. If the fluid temperature exceeds 70°C, the system will automatically enter a cooling cycle or shut down to prevent seal degradation.",
     "metadata": {
       "type: ": "header",
-      "created": "2025-12-09 20:08:34"
+      "created": "2025-12-09 20:17:50"
     }
   },
   {
@@ -140,7 +140,7 @@
     "data: ": "SECTION 4: SHUTDOWN To power down, reduce the load on the actuators. Switch off the electric motor. Cycle the control valves to release any trapped hydraulic pressure in the accumulator lines.",
     "metadata": {
       "type: ": "header",
-      "created": "2025-12-09 20:08:34"
+      "created": "2025-12-09 20:17:50"
     }
   }
 ]
