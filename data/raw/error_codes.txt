@@ -1,0 +1,25 @@
+DIAGNOSTIC TROUBLE CODES (DTC) - HPU-2000
+
+E-101: Low Oil Level
+Description: Reservoir fluid level has dropped below the critical threshold.
+Possible Causes: External leakage, seal failure, or insufficient filling during maintenance.
+Action: Inspect system for puddles. Refill with ISO VG 46 oil immediately.
+
+E-205: Filter Clog Detected
+Description: Differential pressure across the return filter exceeds 3.5 bar.
+Possible Causes: Contaminated fluid or overdue filter replacement.
+Action: Replace filter element (Part No. F-992). Check oil cleanliness.
+
+E-300: Pump Cavitation Warning
+Description: System detects acoustic anomalies consistent with air bubbles in the fluid.
+Possible Causes: Suction strainer blocked, low oil level, or air intake in the suction line.
+Action: Check suction line tightness. Ensure the suction valve is fully open.
+
+E-501: Thermal Overload / Overheating
+Description: Fluid temperature sensor reads above 85°C.
+Possible Causes: Cooler fan failure, heat exchanger blockage, or excessive duty cycle.
+Action: Reduce system load. Check the water-cooling flow or clean the air-cooler fins.
+
+E-999: Emergency Stop Activated
+Description: The physical E-Stop button was pressed.
+Action: Release the button and reset the safety relay to resume operation.

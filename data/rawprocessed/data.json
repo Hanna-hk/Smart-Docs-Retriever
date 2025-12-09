@@ -1,0 +1,146 @@
+[
+  {
+    "id": "data_chunk_0",
+    "source: ": "error_codes.txt",
+    "data: ": "DIAGNOSTIC TROUBLE CODES (DTC) - HPU-2000",
+    "metadata": {
+      "type: ": "info"
+    }
+  },
+  {
+    "id": "data_chunk_1",
+    "source: ": "error_codes.txt",
+    "data: ": "E-101: Low Oil Level Description: Reservoir fluid level has dropped below the critical threshold. Possible Causes: External leakage, seal failure, or insufficient filling during maintenance. Action: Inspect system for puddles. Refill with ISO VG 46 oil immediately.",
+    "metadata": {
+      "type: ": "error",
+      "priority: ": "high",
+      "code: ": "E-101"
+    }
+  },
+  {
+    "id": "data_chunk_2",
+    "source: ": "error_codes.txt",
+    "data: ": "E-205: Filter Clog Detected Description: Differential pressure across the return filter exceeds 3.5 bar. Possible Causes: Contaminated fluid or overdue filter replacement. Action: Replace filter element (Part No. F-992). Check oil cleanliness.",
+    "metadata": {
+      "type: ": "error",
+      "priority: ": "high",
+      "code: ": "E-205"
+    }
+  },
+  {
+    "id": "data_chunk_3",
+    "source: ": "error_codes.txt",
+    "data: ": "E-300: Pump Cavitation Warning Description: System detects acoustic anomalies consistent with air bubbles in the fluid. Possible Causes: Suction strainer blocked, low oil level, or air intake in the suction line. Action: Check suction line tightness. Ensure the suction valve is fully open.",
+    "metadata": {
+      "type: ": "error",
+      "priority: ": "high",
+      "code: ": "E-300"
+    }
+  },
+  {
+    "id": "data_chunk_4",
+    "source: ": "error_codes.txt",
+    "data: ": "E-501: Thermal Overload / Overheating Description: Fluid temperature sensor reads above 85°C. Possible Causes: Cooler fan failure, heat exchanger blockage, or excessive duty cycle. Action: Reduce system load. Check the water-cooling flow or clean the air-cooler fins.",
+    "metadata": {
+      "type: ": "error",
+      "priority: ": "high",
+      "code: ": "E-501"
+    }
+  },
+  {
+    "id": "data_chunk_5",
+    "source: ": "error_codes.txt",
+    "data: ": "E-999: Emergency Stop Activated Description: The physical E-Stop button was pressed. Action: Release the button and reset the safety relay to resume operation.",
+    "metadata": {
+      "type: ": "error",
+      "priority: ": "high",
+      "code: ": "E-999"
+    }
+  },
+  {
+    "id": "data_chunk_0",
+    "source: ": "maintenance_log.txt",
+    "data: ": "MAINTENANCE LOGBOOK - UNIT #42",
+    "metadata": {
+      "type: ": "info"
+    }
+  },
+  {
+    "id": "data_chunk_1",
+    "source: ": "maintenance_log.txt",
+    "data: ": "[2023-10-01] Technician: A. Muller Routine inspection completed. Oil analysis shows particle count ISO 18/16/13 (Normal). Replaced the breather cap on the reservoir. System running smoothly at 45°C.",
+    "metadata": {
+      "type: ": "info"
+    }
+  },
+  {
+    "id": "data_chunk_2",
+    "source: ": "maintenance_log.txt",
+    "data: ": "[2023-10-15] Technician: J. Smith Reported issue: Operator complained about \"sluggish movement\" in the main cylinder. Investigation: Found a small leak in the pilot line near Valve Block B. Action: Tightened the fitting. Pressure restored to 250 bar. Monitored for 30 minutes, no further leaks.",
+    "metadata": {
+      "type: ": "info"
+    }
+  },
+  {
+    "id": "data_chunk_3",
+    "source: ": "maintenance_log.txt",
+    "data: ": "[2023-11-02] Technician: A. Muller Emergency repair. System shut down with Error E-501. Investigation: The cooling fan was not spinning. Action: Discovered a blown fuse in the 24V control circuit. Replaced fuse. Fan is now operational. Temperature dropped to 55°C within 10 minutes.",
+    "metadata": {
+      "type: ": "error",
+      "priority: ": "high",
+      "code: ": "E-501"
+    }
+  },
+  {
+    "id": "data_chunk_4",
+    "source: ": "maintenance_log.txt",
+    "data: ": "[2023-11-20] Technician: K. Doe Scheduled maintenance. Replaced the return filter element as per the 500-hour service interval. Visually inspected all hoses for wear and abrasion. No issues found.",
+    "metadata": {
+      "type: ": "info"
+    }
+  },
+  {
+    "id": "data_chunk_0",
+    "source: ": "manual_hydraulic.txt",
+    "data: ": "HPU-2000 SERIES HYDRAULIC POWER UNIT - OPERATION MANUAL",
+    "metadata": {
+      "type: ": "info"
+    }
+  },
+  {
+    "id": "data_chunk_1",
+    "source: ": "manual_hydraulic.txt",
+    "data: ": "SECTION 1: SAFETY PRECAUTIONS High-pressure fluid injection can cause severe injury. Always depressurize the system before loosening fittings. Personal Protective Equipment (PPE), including safety glasses and steel-toed boots, is mandatory within 5 meters of the unit during operation.",
+    "metadata": {
+      "type: ": "header",
+      "created": "2025-12-09 20:08:34"
+    }
+  },
+  {
+    "id": "data_chunk_2",
+    "source: ": "manual_hydraulic.txt",
+    "data: ": "SECTION 2: STARTUP SEQUENCE 1. Check the oil level in the reservoir. It must be between the minimum and maximum markers on the sight glass. 2. Open the suction valve completely to prevent pump cavitation. 3. Ensure the pressure relief valve is set to the minimum setting before starting the electric motor. 4. Initiate the motor start sequence. Listen for abnormal sounds. If a high-pitched whine is heard, stop immediately; this indicates aeration.",
+    "metadata": {
+      "type: ": "header",
+      "created": "2025-12-09 20:08:34"
+    }
+  },
+  {
+    "id": "data_chunk_3",
+    "source: ": "manual_hydraulic.txt",
+    "data: ": "SECTION 3: OPERATING PARAMETERS The nominal operating pressure is 250 bar. The system is designed to operate with ISO VG 46 hydraulic oil. Thermal Management: The optimal operating temperature range is 40°C to 60°C. If the fluid temperature exceeds 70°C, the system will automatically enter a cooling cycle or shut down to prevent seal degradation.",
+    "metadata": {
+      "type: ": "header",
+      "created": "2025-12-09 20:08:34"
+    }
+  },
+  {
+    "id": "data_chunk_4",
+    "source: ": "manual_hydraulic.txt",
+    "data: ": "SECTION 4: SHUTDOWN To power down, reduce the load on the actuators. Switch off the electric motor. Cycle the control valves to release any trapped hydraulic pressure in the accumulator lines.",
+    "metadata": {
+      "type: ": "header",
+      "created": "2025-12-09 20:08:34"
+    }
+  }
+]
