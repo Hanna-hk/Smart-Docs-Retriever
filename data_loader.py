@@ -18,44 +18,44 @@ def make_chunks(directory):
                 with open(file_path, "r") as f:
                     content = f.read()
                     chunks = content.split("\n\n")
-                    id_chunk = "data_chunk_"
+                    id_chunk = re.sub(r".txt", '', file)+"_data_chunk_"
                     i = 0
                     for chunk in chunks:
                         if len(chunk) > 20:
                             chunk=re.sub(r'\n', ' ', chunk)
                             error = re.search(r"E-\d{3}", chunk)
-                            metadata = {}
+                            metadata = {
+                                "id": id_chunk+str(i),
+                                "source": file
+                            }
                             warnings =["warning", "danger", "caution", "injury"]
                             if chunk.upper().startswith("SECTION"):
-                                metadata={
-                                        "type: ": "header",
+                                metadata.update({
+                                        "type": "header",
                                         "created": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                                    }
+                                    })
                             elif error:
-                                metadata={
-                                    "type: ":"error",
-                                    "priority: ":"high",
-                                    "code: ": error.group(0)
-                                }
+                                metadata.update({
+                                    "type":"error",
+                                    "priority":"high",
+                                    "code": error.group(0)
+                                })
                             elif any(word in chunk.lower() for word in warnings):
-                                metadata={
-                                    "type: ":"warning",
-                                    "priority: ":"critical"
-                                }
+                                metadata.update({
+                                    "type":"warning",
+                                    "priority":"critical"
+                                })
                             else:
-                                metadata={
-                                    "type: ":"info"
-                                }
+                                metadata.update({
+                                    "type":"info"
+                                })
                             info.append({
-                                "id": id_chunk+str(i),
-                                "source: ": file,
-                                "data: ": chunk,
+                                "data": chunk,
                                 "metadata": metadata
                                 }
                             )
                             i+=1
-        output_path = os.getcwd()+"/data/processed/data.json"
-        print(output_path)
+        output_path = os.path.join(os.getcwd(), "data", "processed","data.json")
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, "w") as f:
             json.dump(info, f, indent=2, ensure_ascii=False)
