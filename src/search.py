@@ -27,15 +27,17 @@ class Searcher:
         encoded_req=model.encode(self.request)
         self.cosine = util.semantic_search(encoded_req, self.data_numpy, top_k=3)[0]
         logging.info("Cosine Similarity has been calculated")
-        self.answers=[]
+        answers=[]
         for res in self.cosine:
             if(res['score']>threshold):
-                self.answers.append(self.data[res['corpus_id']])
-        if self.answers==[]:
+                answers.append(self.data[res['corpus_id']])
+        if answers==[]:
             logging.info("There are no answers for this request")
         else:
-            logging.info("The most accurate answers were found")
-        return self.answers
+            answers_data = os.path.join(os.getcwd(), "data", "processed", "answers.json")
+            with open(answers_data, "w") as f:
+                json.dump(answers,f, indent=2, ensure_ascii=False)
+            logging.info("The most accurate answers were found and loaded to json file")
 if __name__=="__main__":
     try:
         data_path = os.path.join(os.getcwd(), "data", "raw")
@@ -45,8 +47,8 @@ if __name__=="__main__":
             output_path_chunks = make_chunks(data_path)
             output_path_npy=indexer(output_path_chunks)
         if len(sys.argv)>=2:
-            answer = Searcher(output_path_chunks, output_path_npy, sys.argv[1])
-            print(answer.request_processing())
+            search = Searcher(output_path_chunks, output_path_npy, sys.argv[1])
+            search.request_processing()
         else:
             logging.info("There are no arguments")
     except Exception as e:

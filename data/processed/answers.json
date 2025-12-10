@@ -1,0 +1,30 @@
+[
+  {
+    "data": "E-501: Thermal Overload / Overheating Description: Fluid temperature sensor reads above 85°C. Possible Causes: Cooler fan failure, heat exchanger blockage, or excessive duty cycle. Action: Reduce system load. Check the water-cooling flow or clean the air-cooler fins.",
+    "metadata": {
+      "id": "error_codes_data_chunk_4",
+      "source": "error_codes.txt",
+      "type": "error",
+      "priority": "high",
+      "code": "E-501"
+    }
+  },
+  {
+    "data": "[2023-11-02] Technician: A. Muller Emergency repair. System shut down with Error E-501. Investigation: The cooling fan was not spinning. Action: Discovered a blown fuse in the 24V control circuit. Replaced fuse. Fan is now operational. Temperature dropped to 55°C within 10 minutes.",
+    "metadata": {
+      "id": "maintenance_log_data_chunk_3",
+      "source": "maintenance_log.txt",
+      "type": "error",
+      "priority": "high",
+      "code": "E-501"
+    }
+  },
+  {
+    "data": "DIAGNOSTIC TROUBLE CODES (DTC) - HPU-2000",
+    "metadata": {
+      "id": "error_codes_data_chunk_0",
+      "source": "error_codes.txt",
+      "type": "info"
+    }
+  }
+]
