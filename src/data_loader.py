@@ -60,9 +60,6 @@ def make_chunks(directory):
         with open(output_path, "w") as f:
             json.dump(info, f, indent=2, ensure_ascii=False)
         logging.info("JSON file with cleaned data has been created")
+        return output_path
     except Exception as e:
         raise CustomException(e,sys)
-
-if __name__ == "__main__":
-    data_path = os.path.join(os.getcwd(), "data", "raw")
-    make_chunks(data_path)
