@@ -37,7 +37,7 @@ class Searcher:
             logging.info("There are no answers for this request")
             log_r.insertRequest(self.request)
         else:
-            logging.info("The most accurate answers were found and inserted into the database")
+            logging.info("Search successful. Results logged.")
             best_ans = answers[0]
             top_id = best_ans.get('metadata', {}).get('id', 'unknown_id')
             top_score = self.cosine[0]['score']
@@ -47,7 +47,7 @@ class Searcher:
                                 top_id, round(top_score,4),
                                 preview
                                 )
-            return answers
+        return answers
 if __name__=="__main__":
     try:
         data_path = os.path.join(os.getcwd(), "data", "raw")
