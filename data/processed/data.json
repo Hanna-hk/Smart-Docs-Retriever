@@ -1,146 +1,292 @@
 [
   {
-    "data": "DIAGNOSTIC TROUBLE CODES (DTC) - HPU-2000",
+    "data": "E-101: Low Oil Level. The reservoir fluid level has dropped below the critical threshold. This is likely caused by external leakage, seal failure, or insufficient filling during maintenance. Inspect the system for puddles and refill with ISO VG 46 oil immediately.",
     "metadata": {
       "id": "error_codes_data_chunk_0",
       "source": "error_codes.txt",
-      "type": "info"
+      "type": "ERROR",
+      "title": "E-101: Low Oil Level. The reservoir fluid level has dropped below the critical threshold. This is likely caused by external leakage, seal failure, or insufficient filling during maintenance. Inspect the system for puddles and refill with ISO VG 46 oil immediately.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "E-101: Low Oil Level Description: Reservoir fluid level has dropped below the critical threshold. Possible Causes: External leakage, seal failure, or insufficient filling during maintenance. Action: Inspect system for puddles. Refill with ISO VG 46 oil immediately.",
+    "data": "E-150: Accumulator Nitrogen Pressure Low. The pre-charge pressure in the bladder accumulator is below the 50 bar setpoint. This condition may be caused by gas valve leakage, bladder rupture, or natural diffusion over time. Isolate the accumulator, check nitrogen pressure with a charging kit, and refill if necessary.",
     "metadata": {
       "id": "error_codes_data_chunk_1",
       "source": "error_codes.txt",
-      "type": "error",
-      "priority": "high",
-      "code": "E-101"
+      "type": "ERROR",
+      "title": "E-150: Accumulator Nitrogen Pressure Low. The pre-charge pressure in the bladder accumulator is below the 50 bar setpoint. This condition may be caused by gas valve leakage, bladder rupture, or natural diffusion over time. Isolate the accumulator, check nitrogen pressure with a charging kit, and refill if necessary.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "E-205: Filter Clog Detected Description: Differential pressure across the return filter exceeds 3.5 bar. Possible Causes: Contaminated fluid or overdue filter replacement. Action: Replace filter element (Part No. F-992). Check oil cleanliness.",
+    "data": "E-205: Filter Clog Detected. The differential pressure across the return filter exceeds 3.5 bar, indicating contaminated fluid or overdue filter replacement. Replace the filter element (Part No. F-992) and check the oil cleanliness.",
     "metadata": {
       "id": "error_codes_data_chunk_2",
       "source": "error_codes.txt",
-      "type": "error",
-      "priority": "high",
-      "code": "E-205"
+      "type": "ERROR",
+      "title": "E-205: Filter Clog Detected. The differential pressure across the return filter exceeds 3.5 bar, indicating contaminated fluid or overdue filter replacement. Replace the filter element (Part No. F-992) and check the oil cleanliness.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "E-300: Pump Cavitation Warning Description: System detects acoustic anomalies consistent with air bubbles in the fluid. Possible Causes: Suction strainer blocked, low oil level, or air intake in the suction line. Action: Check suction line tightness. Ensure the suction valve is fully open.",
+    "data": "E-210: Water Contamination Detected. The moisture sensor reports water content in oil exceeds 500 ppm. Causes include heat exchanger internal leaks, condensation due to temperature swings, or a missing tank breather cap. Stop operation immediately, perform oil analysis, and engage the offline kidney-loop filtration or schedule a fluid flush.",
     "metadata": {
       "id": "error_codes_data_chunk_3",
       "source": "error_codes.txt",
-      "type": "error",
-      "priority": "high",
-      "code": "E-300"
+      "type": "ERROR",
+      "title": "E-210: Water Contamination Detected. The moisture sensor reports water content in oil exceeds 500 ppm. Causes include heat exchanger internal leaks, condensation due to temperature swings, or a missing tank breather cap. Stop operation immediately, perform oil analysis, and engage the offline kidney-loop filtration or schedule a fluid flush.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "E-501: Thermal Overload / Overheating Description: Fluid temperature sensor reads above 85°C. Possible Causes: Cooler fan failure, heat exchanger blockage, or excessive duty cycle. Action: Reduce system load. Check the water-cooling flow or clean the air-cooler fins.",
+    "data": "E-300: Pump Cavitation Warning. The system detects acoustic anomalies consistent with air bubbles in the fluid. This is often caused by a blocked suction strainer, low oil level, or air intake in the suction line. Check suction line tightness and ensure the suction valve is fully open.",
     "metadata": {
       "id": "error_codes_data_chunk_4",
       "source": "error_codes.txt",
-      "type": "error",
-      "priority": "high",
-      "code": "E-501"
+      "type": "ERROR",
+      "title": "E-300: Pump Cavitation Warning. The system detects acoustic anomalies consistent with air bubbles in the fluid. This is often caused by a blocked suction strainer, low oil level, or air intake in the suction line. Check suction line tightness and ensure the suction valve is fully open.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "E-999: Emergency Stop Activated Description: The physical E-Stop button was pressed. Action: Release the button and reset the safety relay to resume operation.",
+    "data": "E-402: High System Pressure / Relief Valve Active. System pressure has exceeded 250 bar, triggering the mechanical safety relief valve. This can happen due to pressure transducer failure, a drifted relief valve setting, or a blocked return line. Verify the pressure gauge reading and adjust the relief valve setting counter-clockwise or replace the cartridge.",
     "metadata": {
       "id": "error_codes_data_chunk_5",
       "source": "error_codes.txt",
-      "type": "error",
-      "priority": "high",
-      "code": "E-999"
+      "type": "ERROR",
+      "title": "E-402: High System Pressure / Relief Valve Active. System pressure has exceeded 250 bar, triggering the mechanical safety relief valve. This can happen due to pressure transducer failure, a drifted relief valve setting, or a blocked return line. Verify the pressure gauge reading and adjust the relief valve setting counter-clockwise or replace the cartridge.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "MAINTENANCE LOGBOOK - UNIT #42",
+    "data": "E-501: Thermal Overload / Overheating. The fluid temperature sensor reads above 85°C. Common causes include cooler fan failure, heat exchanger blockage, or excessive duty cycle. Reduce the system load, check the water-cooling flow, or clean the air-cooler fins.",
+    "metadata": {
+      "id": "error_codes_data_chunk_6",
+      "source": "error_codes.txt",
+      "type": "ERROR",
+      "title": "E-501: Thermal Overload / Overheating. The fluid temperature sensor reads above 85°C. Common causes include cooler fan failure, heat exchanger blockage, or excessive duty cycle. Reduce the system load, check the water-cooling flow, or clean the air-cooler fins.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "E-605: Electric Motor Phase Loss. The main pump motor controller detects a missing electrical phase (L1, L2, or L3). This is typically caused by a blown fuse in the control cabinet, a loose terminal connection, or contactor failure. Lockout/Tagout power, check continuity on all three phases, and tighten terminal block screws.",
+    "metadata": {
+      "id": "error_codes_data_chunk_7",
+      "source": "error_codes.txt",
+      "type": "ERROR",
+      "title": "E-605: Electric Motor Phase Loss. The main pump motor controller detects a missing electrical phase (L1, L2, or L3). This is typically caused by a blown fuse in the control cabinet, a loose terminal connection, or contactor failure. Lockout/Tagout power, check continuity on all three phases, and tighten terminal block screws.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "E-710: Solenoid Valve Coil Open Circuit. The PLC detects zero current draw when commanding directional valve YV-02. This indicates a burnt-out solenoid coil, a broken wire in the connector, or loose pin contact. Measure resistance across coil pins (should be ~30 Ohms) and replace the coil if resistance is infinite.",
+    "metadata": {
+      "id": "error_codes_data_chunk_8",
+      "source": "error_codes.txt",
+      "type": "ERROR",
+      "title": "E-710: Solenoid Valve Coil Open Circuit. The PLC detects zero current draw when commanding directional valve YV-02. This indicates a burnt-out solenoid coil, a broken wire in the connector, or loose pin contact. Measure resistance across coil pins (should be ~30 Ohms) and replace the coil if resistance is infinite.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "E-800: Analog Sensor Signal Loss (4-20mA). The input signal from the main flow meter reads 0mA (Wire Break detection). This is caused by a severed signal cable, sensor power supply failure, or a disconnected plug. Check voltage at the sensor plug (24VDC) and inspect cable runs for physical damage.",
+    "metadata": {
+      "id": "error_codes_data_chunk_9",
+      "source": "error_codes.txt",
+      "type": "ERROR",
+      "title": "E-800: Analog Sensor Signal Loss (4-20mA). The input signal from the main flow meter reads 0mA (Wire Break detection). This is caused by a severed signal cable, sensor power supply failure, or a disconnected plug. Check voltage at the sensor plug (24VDC) and inspect cable runs for physical damage.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "E-999: Emergency Stop Activated. The physical E-Stop button was pressed. Release the button and reset the safety relay to resume operation.",
+    "metadata": {
+      "id": "error_codes_data_chunk_10",
+      "source": "error_codes.txt",
+      "type": "ERROR",
+      "title": "E-999: Emergency Stop Activated. The physical E-Stop button was pressed. Release the button and reset the safety relay to resume operation.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "LOG ENTRY: 2023-10-01 Technician A. Muller completed a routine inspection.  Oil analysis results indicate a particle count of ISO 18/16/13,  which is within normal operating limits. The breather cap on the reservoir  was replaced as a preventive measure. The system is currently running smoothly  at an operating temperature of 45°C.",
     "metadata": {
       "id": "maintenance_log_data_chunk_0",
       "source": "maintenance_log.txt",
-      "type": "info"
+      "type": "INFO",
+      "title": "LOG ENTRY: 2023-10-01 Technician A. Muller completed a routine inspection.  Oil analysis results indicate a particle count of ISO 18/16/13,  which is within normal operating limits. The breather cap on the reservoir  was replaced as a preventive measure. The system is currently running smoothly  at an operating temperature of 45°C.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "[2023-10-01] Technician: A. Muller Routine inspection completed. Oil analysis shows particle count ISO 18/16/13 (Normal). Replaced the breather cap on the reservoir. System running smoothly at 45°C.",
+    "data": "LOG ENTRY: 2023-10-15 Technician J. Smith responded to an operator complaint regarding \"sluggish movement\" in the main cylinder.  Upon investigation, a small leak was found in the pilot line near Valve Block B. The fitting was tightened,  restoring system pressure to 250 bar. The unit was monitored for 30 minutes with no further leaks detected.",
     "metadata": {
       "id": "maintenance_log_data_chunk_1",
       "source": "maintenance_log.txt",
-      "type": "info"
+      "type": "INFO",
+      "title": "LOG ENTRY: 2023-10-15 Technician J. Smith responded to an operator complaint regarding \"sluggish movement\" in the main cylinder.  Upon investigation, a small leak was found in the pilot line near Valve Block B. The fitting was tightened,  restoring system pressure to 250 bar. The unit was monitored for 30 minutes with no further leaks detected.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "[2023-10-15] Technician: J. Smith Reported issue: Operator complained about \"sluggish movement\" in the main cylinder. Investigation: Found a small leak in the pilot line near Valve Block B. Action: Tightened the fitting. Pressure restored to 250 bar. Monitored for 30 minutes, no further leaks.",
+    "data": "LOG ENTRY: 2023-11-02 Technician A. Muller performed an emergency repair after the system shut down with Error E-501 (Thermal Overload).  The investigation revealed that the cooling fan was not spinning.  The root cause was identified as a blown fuse in the 24V control circuit.  The fuse was replaced, restoring fan operation. The fluid temperature dropped to 55°C within 10 minutes.",
     "metadata": {
       "id": "maintenance_log_data_chunk_2",
       "source": "maintenance_log.txt",
-      "type": "info"
+      "type": "ERROR",
+      "title": "LOG ENTRY: 2023-11-02 Technician A. Muller performed an emergency repair after the system shut down with Error E-501 (Thermal Overload).  The investigation revealed that the cooling fan was not spinning.  The root cause was identified as a blown fuse in the 24V control circuit.  The fuse was replaced, restoring fan operation. The fluid temperature dropped to 55°C within 10 minutes.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "[2023-11-02] Technician: A. Muller Emergency repair. System shut down with Error E-501. Investigation: The cooling fan was not spinning. Action: Discovered a blown fuse in the 24V control circuit. Replaced fuse. Fan is now operational. Temperature dropped to 55°C within 10 minutes.",
+    "data": "LOG ENTRY: 2023-11-20 Technician K. Doe performed scheduled maintenance. The return filter element was replaced in  accordance with the 500-hour service interval. A visual inspection of all hydraulic hoses was  conducted to check for wear and abrasion; no issues were found.",
     "metadata": {
       "id": "maintenance_log_data_chunk_3",
       "source": "maintenance_log.txt",
-      "type": "error",
-      "priority": "high",
-      "code": "E-501"
+      "type": "INFO",
+      "title": "LOG ENTRY: 2023-11-20 Technician K. Doe performed scheduled maintenance. The return filter element was replaced in  accordance with the 500-hour service interval. A visual inspection of all hydraulic hoses was  conducted to check for wear and abrasion; no issues were found.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "[2023-11-20] Technician: K. Doe Scheduled maintenance. Replaced the return filter element as per the 500-hour service interval. Visually inspected all hoses for wear and abrasion. No issues found.",
+    "data": "LOG ENTRY: 2023-12-05 Technician J. Smith addressed an issue where system pressure was fluctuating rapidly  between 200 and 240 bar during idle. The investigation pointed to a suspected accumulator bladder failure. The pre-charge pressure was checked and found to be at 15 bar, whereas the specification requires 50 bar. The accumulator bank was isolated, and nitrogen was refilled to 50 bar. Pressure stabilized immediately, and no bladder rupture was detected.",
     "metadata": {
       "id": "maintenance_log_data_chunk_4",
       "source": "maintenance_log.txt",
-      "type": "info"
+      "type": "INFO",
+      "title": "LOG ENTRY: 2023-12-05 Technician J. Smith addressed an issue where system pressure was fluctuating rapidly  between 200 and 240 bar during idle. The investigation pointed to a suspected accumulator bladder failure. The pre-charge pressure was checked and found to be at 15 bar, whereas the specification requires 50 bar. The accumulator bank was isolated, and nitrogen was refilled to 50 bar. Pressure stabilized immediately, and no bladder rupture was detected.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "HPU-2000 SERIES HYDRAULIC POWER UNIT - OPERATION MANUAL",
+    "data": "LOG ENTRY: 2023-12-12 Technician A. Muller noticed during a routine inspection that the hydraulic fluid appeared \"milky\" or cloudy in the sight glass. A fluid sample was tested using a portable moisture sensor, showing a water content of 650 ppm. The source of ingress was traced to a loose gasket on the heat exchanger. The bolts were tightened to 60 Nm, and an offline filtration loop was initiated to remove the excess moisture.",
+    "metadata": {
+      "id": "maintenance_log_data_chunk_5",
+      "source": "maintenance_log.txt",
+      "type": "INFO",
+      "title": "LOG ENTRY: 2023-12-12 Technician A. Muller noticed during a routine inspection that the hydraulic fluid appeared \"milky\" or cloudy in the sight glass. A fluid sample was tested using a portable moisture sensor, showing a water content of 650 ppm. The source of ingress was traced to a loose gasket on the heat exchanger. The bolts were tightened to 60 Nm, and an offline filtration loop was initiated to remove the excess moisture.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "LOG ENTRY: 2024-01-10 Technician B. Evans responded to Error E-605 (Phase Loss) which triggered on startup, preventing the motor from spinning. Inspection of the main electrical cabinet revealed a loose connection on the L2 terminal block caused by vibration. The wire end was re-stripped and the terminal screw tightened. Thread-locker was applied to prevent future loosening. Startup was successful.",
+    "metadata": {
+      "id": "maintenance_log_data_chunk_6",
+      "source": "maintenance_log.txt",
+      "type": "ERROR",
+      "title": "LOG ENTRY: 2024-01-10 Technician B. Evans responded to Error E-605 (Phase Loss) which triggered on startup, preventing the motor from spinning. Inspection of the main electrical cabinet revealed a loose connection on the L2 terminal block caused by vibration. The wire end was re-stripped and the terminal screw tightened. Thread-locker was applied to prevent future loosening. Startup was successful.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "LOG ENTRY: 2024-01-25 Technician K. Doe performed preventive maintenance tasks. The electric motor bearings were greased using Lithium-complex grease. The alignment of the pump coupling was checked using a laser alignment tool; deviation was found to be 0.05mm, which is within tolerance. The cooling fins on the air-oil cooler were cleaned using compressed air to ensure efficient heat dissipation.",
+    "metadata": {
+      "id": "maintenance_log_data_chunk_7",
+      "source": "maintenance_log.txt",
+      "type": "INFO",
+      "title": "LOG ENTRY: 2024-01-25 Technician K. Doe performed preventive maintenance tasks. The electric motor bearings were greased using Lithium-complex grease. The alignment of the pump coupling was checked using a laser alignment tool; deviation was found to be 0.05mm, which is within tolerance. The cooling fins on the air-oil cooler were cleaned using compressed air to ensure efficient heat dissipation.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "LOG ENTRY: 2024-02-03 Technician J. Smith investigated a report of a \"loud banging\" sound heard when the cylinder extends. The issue was identified as the \"Water Hammer\" effect caused by the valve closing too abruptly. The ramp-down time on the proportional valve amplifier was adjusted from 0.1s to 0.5s. The noise was eliminated.",
+    "metadata": {
+      "id": "maintenance_log_data_chunk_8",
+      "source": "maintenance_log.txt",
+      "type": "INFO",
+      "title": "LOG ENTRY: 2024-02-03 Technician J. Smith investigated a report of a \"loud banging\" sound heard when the cylinder extends. The issue was identified as the \"Water Hammer\" effect caused by the valve closing too abruptly. The ramp-down time on the proportional valve amplifier was adjusted from 0.1s to 0.5s. The noise was eliminated.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "LOG ENTRY: 2024-02-14 Technician A. Muller repaired an oil leak observed under the main pump manifold. The cause was identified as the O-ring seal on the check valve, which had become brittle and cracked. The local line was drained, the check valve was removed, the seating surface was cleaned, and a new Viton O-ring was installed. A subsequent leak test was passed.",
+    "metadata": {
+      "id": "maintenance_log_data_chunk_9",
+      "source": "maintenance_log.txt",
+      "type": "INFO",
+      "title": "LOG ENTRY: 2024-02-14 Technician A. Muller repaired an oil leak observed under the main pump manifold. The cause was identified as the O-ring seal on the check valve, which had become brittle and cracked. The local line was drained, the check valve was removed, the seating surface was cleaned, and a new Viton O-ring was installed. A subsequent leak test was passed.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "SECTION 1: SAFETY PRECAUTIONS High-pressure fluid injection can cause severe injury. Always depressurize the system before loosening fittings.  Personal Protective Equipment (PPE),  including safety glasses and steel-toed boots, is mandatory within 5 meters of the unit during operation.",
     "metadata": {
       "id": "manual_hydraulic_data_chunk_0",
       "source": "manual_hydraulic.txt",
-      "type": "info"
-    }
-  },
-  {
-    "data": "SECTION 1: SAFETY PRECAUTIONS High-pressure fluid injection can cause severe injury. Always depressurize the system before loosening fittings. Personal Protective Equipment (PPE), including safety glasses and steel-toed boots, is mandatory within 5 meters of the unit during operation.",
-    "metadata": {
-      "id": "manual_hydraulic_data_chunk_1",
-      "source": "manual_hydraulic.txt",
-      "type": "header",
-      "created": "2025-12-10 15:57:26"
+      "type": "HEADER",
+      "title": "SECTION 1: SAFETY PRECAUTIONS High-pressure fluid injection can cause severe injury. Always depressurize the system before loosening fittings.  Personal Protective Equipment (PPE),  including safety glasses and steel-toed boots, is mandatory within 5 meters of the unit during operation.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
     "data": "SECTION 2: STARTUP SEQUENCE 1. Check the oil level in the reservoir. It must be between the minimum and maximum markers on the sight glass. 2. Open the suction valve completely to prevent pump cavitation. 3. Ensure the pressure relief valve is set to the minimum setting before starting the electric motor. 4. Initiate the motor start sequence. Listen for abnormal sounds. If a high-pitched whine is heard, stop immediately; this indicates aeration.",
     "metadata": {
-      "id": "manual_hydraulic_data_chunk_2",
+      "id": "manual_hydraulic_data_chunk_1",
       "source": "manual_hydraulic.txt",
-      "type": "header",
-      "created": "2025-12-10 15:57:26"
+      "type": "HEADER",
+      "title": "SECTION 2: STARTUP SEQUENCE 1. Check the oil level in the reservoir. It must be between the minimum and maximum markers on the sight glass. 2. Open the suction valve completely to prevent pump cavitation. 3. Ensure the pressure relief valve is set to the minimum setting before starting the electric motor. 4. Initiate the motor start sequence. Listen for abnormal sounds. If a high-pitched whine is heard, stop immediately; this indicates aeration.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "SECTION 3: OPERATING PARAMETERS The nominal operating pressure is 250 bar. The system is designed to operate with ISO VG 46 hydraulic oil. Thermal Management: The optimal operating temperature range is 40°C to 60°C. If the fluid temperature exceeds 70°C, the system will automatically enter a cooling cycle or shut down to prevent seal degradation.",
+    "data": "SECTION 3: OPERATING PARAMETERS The nominal operating pressure is 250 bar. The system is designed to operate with ISO VG 46 hydraulic oil. Thermal Management: The optimal operating temperature range is 40°C to 60°C. If the fluid temperature exceeds 70°C,  the system will automatically enter a cooling cycle or shut down to prevent seal degradation.",
+    "metadata": {
+      "id": "manual_hydraulic_data_chunk_2",
+      "source": "manual_hydraulic.txt",
+      "type": "HEADER",
+      "title": "SECTION 3: OPERATING PARAMETERS The nominal operating pressure is 250 bar. The system is designed to operate with ISO VG 46 hydraulic oil. Thermal Management: The optimal operating temperature range is 40°C to 60°C. If the fluid temperature exceeds 70°C,  the system will automatically enter a cooling cycle or shut down to prevent seal degradation.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "SECTION 4: SHUTDOWN To power down, reduce the load on the actuators. Switch off the electric motor.  Cycle the control valves to release any trapped hydraulic pressure in the accumulator lines.",
     "metadata": {
       "id": "manual_hydraulic_data_chunk_3",
       "source": "manual_hydraulic.txt",
-      "type": "header",
-      "created": "2025-12-10 15:57:26"
+      "type": "HEADER",
+      "title": "SECTION 4: SHUTDOWN To power down, reduce the load on the actuators. Switch off the electric motor.  Cycle the control valves to release any trapped hydraulic pressure in the accumulator lines.",
+      "created": "2025-12-11 23:29:32"
     }
   },
   {
-    "data": "SECTION 4: SHUTDOWN To power down, reduce the load on the actuators. Switch off the electric motor. Cycle the control valves to release any trapped hydraulic pressure in the accumulator lines.",
+    "data": "SECTION 5: MAINTENANCE SCHEDULE  To ensure longevity, adhere to the following service intervals: Daily Inspection: Visually check hoses for leaks and the reservoir for oil level. Filter Replacement: The return line filter element (Part No. F-992) must be replaced after the initial 50 operating  hours (break-in period) and subsequently every 1000 operating hours or when the clogging indicator turns red. Oil Analysis: Perform particle count analysis (target ISO 4406 cleanliness code 18/16/13) every 6 months. Coupling: Check the flexible coupling between the motor and pump for wear or misalignment annually.",
     "metadata": {
       "id": "manual_hydraulic_data_chunk_4",
       "source": "manual_hydraulic.txt",
-      "type": "header",
-      "created": "2025-12-10 15:57:26"
+      "type": "HEADER",
+      "title": "SECTION 5: MAINTENANCE SCHEDULE  To ensure longevity, adhere to the following service intervals: Daily Inspection: Visually check hoses for leaks and the reservoir for oil level. Filter Replacement: The return line filter element (Part No. F-992) must be replaced after the initial 50 operating  hours (break-in period) and subsequently every 1000 operating hours or when the clogging indicator turns red. Oil Analysis: Perform particle count analysis (target ISO 4406 cleanliness code 18/16/13) every 6 months. Coupling: Check the flexible coupling between the motor and pump for wear or misalignment annually.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "SECTION 6: INSTALLATION REQUIREMENTS  The HPU-2000 must be installed on a level concrete foundation capable of supporting 1500 kg. Anchoring: Secure the frame using four M16 anchor bolts to prevent vibration-induced movement. Clearance: Maintain a minimum clearance of 1 meter around the unit for airflow and maintenance access. Electrical: Ensure the main power supply (400V, 3-Phase, 50Hz) matches the motor nameplate. Grounding is required.",
+    "metadata": {
+      "id": "manual_hydraulic_data_chunk_5",
+      "source": "manual_hydraulic.txt",
+      "type": "HEADER",
+      "title": "SECTION 6: INSTALLATION REQUIREMENTS  The HPU-2000 must be installed on a level concrete foundation capable of supporting 1500 kg. Anchoring: Secure the frame using four M16 anchor bolts to prevent vibration-induced movement. Clearance: Maintain a minimum clearance of 1 meter around the unit for airflow and maintenance access. Electrical: Ensure the main power supply (400V, 3-Phase, 50Hz) matches the motor nameplate. Grounding is required.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "SECTION 7: LONG-TERM STORAGE If the unit is to be removed from service for more than 3 months: Fill the reservoir completely to the top to prevent condensation and rust formation inside the tank. Coat all exposed machined surfaces (shafts, flanges) with a corrosion inhibitor. Seal all hydraulic ports with steel plugs (do not use plastic caps for long-term storage). Store in a dry environment with humidity below 60%.",
+    "metadata": {
+      "id": "manual_hydraulic_data_chunk_6",
+      "source": "manual_hydraulic.txt",
+      "type": "HEADER",
+      "title": "SECTION 7: LONG-TERM STORAGE If the unit is to be removed from service for more than 3 months: Fill the reservoir completely to the top to prevent condensation and rust formation inside the tank. Coat all exposed machined surfaces (shafts, flanges) with a corrosion inhibitor. Seal all hydraulic ports with steel plugs (do not use plastic caps for long-term storage). Store in a dry environment with humidity below 60%.",
+      "created": "2025-12-11 23:29:32"
+    }
+  },
+  {
+    "data": "SECTION 8: TROUBLESHOOTING (NON-DTC) Excessive Noise: If the pump makes a grinding noise, check the oil temperature. Cold oil (below 10°C) has high viscosity and causes cavitation.  Allow the tank heater to warm the fluid before starting. Foaming Oil: Indicates air ingress. Tighten all suction line fittings to 45 Nm torque and check the shaft seal.",
+    "metadata": {
+      "id": "manual_hydraulic_data_chunk_7",
+      "source": "manual_hydraulic.txt",
+      "type": "HEADER",
+      "title": "SECTION 8: TROUBLESHOOTING (NON-DTC) Excessive Noise: If the pump makes a grinding noise, check the oil temperature. Cold oil (below 10°C) has high viscosity and causes cavitation.  Allow the tank heater to warm the fluid before starting. Foaming Oil: Indicates air ingress. Tighten all suction line fittings to 45 Nm torque and check the shaft seal.",
+      "created": "2025-12-11 23:29:32"
     }
   }
 ]

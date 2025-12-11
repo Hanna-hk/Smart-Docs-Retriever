@@ -1,7 +1,9 @@
 HPU-2000 SERIES HYDRAULIC POWER UNIT - OPERATION MANUAL
 
 SECTION 1: SAFETY PRECAUTIONS
-High-pressure fluid injection can cause severe injury. Always depressurize the system before loosening fittings. Personal Protective Equipment (PPE), including safety glasses and steel-toed boots, is mandatory within 5 meters of the unit during operation.
+High-pressure fluid injection can cause severe injury. Always depressurize the system before loosening fittings. 
+Personal Protective Equipment (PPE), 
+including safety glasses and steel-toed boots, is mandatory within 5 meters of the unit during operation.
 
 SECTION 2: STARTUP SEQUENCE
 1. Check the oil level in the reservoir. It must be between the minimum and maximum markers on the sight glass.
@@ -11,7 +13,34 @@ SECTION 2: STARTUP SEQUENCE
 
 SECTION 3: OPERATING PARAMETERS
 The nominal operating pressure is 250 bar. The system is designed to operate with ISO VG 46 hydraulic oil.
-Thermal Management: The optimal operating temperature range is 40°C to 60°C. If the fluid temperature exceeds 70°C, the system will automatically enter a cooling cycle or shut down to prevent seal degradation.
+Thermal Management: The optimal operating temperature range is 40°C to 60°C. If the fluid temperature exceeds 70°C, 
+the system will automatically enter a cooling cycle or shut down to prevent seal degradation.
 
 SECTION 4: SHUTDOWN
-To power down, reduce the load on the actuators. Switch off the electric motor. Cycle the control valves to release any trapped hydraulic pressure in the accumulator lines.
+To power down, reduce the load on the actuators. Switch off the electric motor. 
+Cycle the control valves to release any trapped hydraulic pressure in the accumulator lines.
+
+SECTION 5: MAINTENANCE SCHEDULE 
+To ensure longevity, adhere to the following service intervals:
+Daily Inspection: Visually check hoses for leaks and the reservoir for oil level.
+Filter Replacement: The return line filter element (Part No. F-992) must be replaced after the initial 50 operating 
+hours (break-in period) and subsequently every 1000 operating hours or when the clogging indicator turns red.
+Oil Analysis: Perform particle count analysis (target ISO 4406 cleanliness code 18/16/13) every 6 months.
+Coupling: Check the flexible coupling between the motor and pump for wear or misalignment annually.
+
+SECTION 6: INSTALLATION REQUIREMENTS 
+The HPU-2000 must be installed on a level concrete foundation capable of supporting 1500 kg.
+Anchoring: Secure the frame using four M16 anchor bolts to prevent vibration-induced movement.
+Clearance: Maintain a minimum clearance of 1 meter around the unit for airflow and maintenance access.
+Electrical: Ensure the main power supply (400V, 3-Phase, 50Hz) matches the motor nameplate. Grounding is required.
+
+SECTION 7: LONG-TERM STORAGE If the unit is to be removed from service for more than 3 months:
+Fill the reservoir completely to the top to prevent condensation and rust formation inside the tank.
+Coat all exposed machined surfaces (shafts, flanges) with a corrosion inhibitor.
+Seal all hydraulic ports with steel plugs (do not use plastic caps for long-term storage).
+Store in a dry environment with humidity below 60%.
+
+SECTION 8: TROUBLESHOOTING (NON-DTC)
+Excessive Noise: If the pump makes a grinding noise, check the oil temperature. Cold oil (below 10°C) has high viscosity and causes cavitation. 
+Allow the tank heater to warm the fluid before starting.
+Foaming Oil: Indicates air ingress. Tighten all suction line fittings to 45 Nm torque and check the shaft seal.

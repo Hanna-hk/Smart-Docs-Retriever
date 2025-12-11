@@ -1,5 +1,6 @@
-#!/usr/bin/env bash
-set -e
+#!/bin/bash
+
+# Searches for the Python version
 check_python(){
     if command -v python3 &> /dev/null; then
         echo "python3"
@@ -9,6 +10,8 @@ check_python(){
         exit 1
     fi
 }
+
+# Activate the environment of the Python
 activate_venv(){
     if [ -f "$VENV_DIR/Scripts/activate" ]; then
         source "$VENV_DIR/Scripts/activate" # Windows (Git Bash/WSL)
@@ -19,18 +22,23 @@ activate_venv(){
         exit 1
     fi
 }
-VENV_DIR=${VENV_DIR:-"venv"}
+
+# Set the virtual environment directory name
+VENV_DIR="venv"
 PYTHON_EXISTING=$(check_python)
+
 if [ ! "$PYTHON_EXISTING" ]; then
     echo "There is no Python installed"
     exit 1
 elif [ ! -d "$VENV_DIR" ]; then
     "$PYTHON_EXISTING" -m venv "$VENV_DIR"
 fi
+
 echo "Activating Venv..."
 activate_venv
 echo "Installing dependencies..."
 pip install -r requirements.txt
+
 ARG=$1
 if [ -z "$ARG" ]; then
     echo "Print: bash run.sh Your Request"

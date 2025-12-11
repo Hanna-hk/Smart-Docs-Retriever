@@ -1,25 +1,53 @@
 DIAGNOSTIC TROUBLE CODES (DTC) - HPU-2000
 
-E-101: Low Oil Level
-Description: Reservoir fluid level has dropped below the critical threshold.
-Possible Causes: External leakage, seal failure, or insufficient filling during maintenance.
-Action: Inspect system for puddles. Refill with ISO VG 46 oil immediately.
+E-101: Low Oil Level.
+The reservoir fluid level has dropped below the critical threshold.
+This is likely caused by external leakage, seal failure, or insufficient filling during maintenance.
+Inspect the system for puddles and refill with ISO VG 46 oil immediately.
 
-E-205: Filter Clog Detected
-Description: Differential pressure across the return filter exceeds 3.5 bar.
-Possible Causes: Contaminated fluid or overdue filter replacement.
-Action: Replace filter element (Part No. F-992). Check oil cleanliness.
+E-150: Accumulator Nitrogen Pressure Low.
+The pre-charge pressure in the bladder accumulator is below the 50 bar setpoint.
+This condition may be caused by gas valve leakage, bladder rupture, or natural diffusion over time.
+Isolate the accumulator, check nitrogen pressure with a charging kit, and refill if necessary.
 
-E-300: Pump Cavitation Warning
-Description: System detects acoustic anomalies consistent with air bubbles in the fluid.
-Possible Causes: Suction strainer blocked, low oil level, or air intake in the suction line.
-Action: Check suction line tightness. Ensure the suction valve is fully open.
+E-205: Filter Clog Detected.
+The differential pressure across the return filter exceeds 3.5 bar, indicating contaminated fluid or
+overdue filter replacement. Replace the filter element (Part No. F-992) and check the oil cleanliness.
 
-E-501: Thermal Overload / Overheating
-Description: Fluid temperature sensor reads above 85°C.
-Possible Causes: Cooler fan failure, heat exchanger blockage, or excessive duty cycle.
-Action: Reduce system load. Check the water-cooling flow or clean the air-cooler fins.
+E-210: Water Contamination Detected.
+The moisture sensor reports water content in oil exceeds 500 ppm.
+Causes include heat exchanger internal leaks, condensation due to temperature swings,
+or a missing tank breather cap. Stop operation immediately, perform oil analysis,
+and engage the offline kidney-loop filtration or schedule a fluid flush.
 
-E-999: Emergency Stop Activated
-Description: The physical E-Stop button was pressed.
-Action: Release the button and reset the safety relay to resume operation.
+E-300: Pump Cavitation Warning.
+The system detects acoustic anomalies consistent with air bubbles in the fluid.
+This is often caused by a blocked suction strainer, low oil level, or air intake in the suction line.
+Check suction line tightness and ensure the suction valve is fully open.
+
+E-402: High System Pressure / Relief Valve Active.
+System pressure has exceeded 250 bar, triggering the mechanical safety relief valve.
+This can happen due to pressure transducer failure, a drifted relief valve setting, or a blocked return line.
+Verify the pressure gauge reading and adjust the relief valve setting counter-clockwise or replace the cartridge.
+
+E-501: Thermal Overload / Overheating.
+The fluid temperature sensor reads above 85°C. Common causes include cooler fan failure,
+heat exchanger blockage, or excessive duty cycle. Reduce the system load, check the water-cooling flow, or clean the air-cooler fins.
+
+E-605: Electric Motor Phase Loss.
+The main pump motor controller detects a missing electrical phase (L1, L2, or L3).
+This is typically caused by a blown fuse in the control cabinet, a loose terminal connection, or contactor failure.
+Lockout/Tagout power, check continuity on all three phases, and tighten terminal block screws.
+
+E-710: Solenoid Valve Coil Open Circuit.
+The PLC detects zero current draw when commanding directional valve YV-02.
+This indicates a burnt-out solenoid coil, a broken wire in the connector, or loose pin contact.
+Measure resistance across coil pins (should be ~30 Ohms) and replace the coil if resistance is infinite.
+
+E-800: Analog Sensor Signal Loss (4-20mA).
+The input signal from the main flow meter reads 0mA (Wire Break detection).
+This is caused by a severed signal cable, sensor power supply failure, or a disconnected plug.
+Check voltage at the sensor plug (24VDC) and inspect cable runs for physical damage.
+
+E-999: Emergency Stop Activated.
+The physical E-Stop button was pressed. Release the button and reset the safety relay to resume operation.

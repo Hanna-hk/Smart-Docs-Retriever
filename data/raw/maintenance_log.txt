@@ -1,17 +1,60 @@
 MAINTENANCE LOGBOOK - UNIT #42
 
-[2023-10-01] Technician: A. Muller
-Routine inspection completed. Oil analysis shows particle count ISO 18/16/13 (Normal). Replaced the breather cap on the reservoir. System running smoothly at 45°C.
+LOG ENTRY: 2023-10-01
+Technician A. Muller completed a routine inspection. 
+Oil analysis results indicate a particle count of ISO 18/16/13, 
+which is within normal operating limits. The breather cap on the reservoir 
+was replaced as a preventive measure. The system is currently running smoothly 
+at an operating temperature of 45°C.
 
-[2023-10-15] Technician: J. Smith
-Reported issue: Operator complained about "sluggish movement" in the main cylinder.
-Investigation: Found a small leak in the pilot line near Valve Block B.
-Action: Tightened the fitting. Pressure restored to 250 bar. Monitored for 30 minutes, no further leaks.
+LOG ENTRY: 2023-10-15
+Technician J. Smith responded to an operator complaint regarding "sluggish movement" in the main cylinder. 
+Upon investigation, a small leak was found in the pilot line near Valve Block B. The fitting was tightened, 
+restoring system pressure to 250 bar. The unit was monitored for 30 minutes with no further leaks detected.
 
-[2023-11-02] Technician: A. Muller
-Emergency repair. System shut down with Error E-501.
-Investigation: The cooling fan was not spinning.
-Action: Discovered a blown fuse in the 24V control circuit. Replaced fuse. Fan is now operational. Temperature dropped to 55°C within 10 minutes.
+LOG ENTRY: 2023-11-02
+Technician A. Muller performed an emergency repair after the system shut down with Error E-501 (Thermal Overload). 
+The investigation revealed that the cooling fan was not spinning. 
+The root cause was identified as a blown fuse in the 24V control circuit. 
+The fuse was replaced, restoring fan operation. The fluid temperature dropped to 55°C within 10 minutes.
 
-[2023-11-20] Technician: K. Doe
-Scheduled maintenance. Replaced the return filter element as per the 500-hour service interval. Visually inspected all hoses for wear and abrasion. No issues found.
+LOG ENTRY: 2023-11-20
+Technician K. Doe performed scheduled maintenance. The return filter element was replaced in 
+accordance with the 500-hour service interval. A visual inspection of all hydraulic hoses was 
+conducted to check for wear and abrasion; no issues were found.
+
+LOG ENTRY: 2023-12-05
+Technician J. Smith addressed an issue where system pressure was fluctuating rapidly 
+between 200 and 240 bar during idle. The investigation pointed to a suspected accumulator bladder failure.
+The pre-charge pressure was checked and found to be at 15 bar, whereas the specification requires 50 bar.
+The accumulator bank was isolated, and nitrogen was refilled to 50 bar.
+Pressure stabilized immediately, and no bladder rupture was detected.
+
+LOG ENTRY: 2023-12-12
+Technician A. Muller noticed during a routine inspection that the hydraulic fluid appeared "milky"
+or cloudy in the sight glass. A fluid sample was tested using a portable moisture sensor,
+showing a water content of 650 ppm. The source of ingress was traced to a loose gasket on the heat exchanger.
+The bolts were tightened to 60 Nm, and an offline filtration loop was initiated to remove the excess moisture.
+
+LOG ENTRY: 2024-01-10
+Technician B. Evans responded to Error E-605 (Phase Loss) which triggered on startup,
+preventing the motor from spinning. Inspection of the main electrical cabinet revealed a loose connection
+on the L2 terminal block caused by vibration. The wire end was re-stripped and the terminal screw tightened.
+Thread-locker was applied to prevent future loosening. Startup was successful.
+
+LOG ENTRY: 2024-01-25
+Technician K. Doe performed preventive maintenance tasks.
+The electric motor bearings were greased using Lithium-complex grease.
+The alignment of the pump coupling was checked using a laser alignment tool; deviation was found to be 0.05mm,
+which is within tolerance. The cooling fins on the air-oil cooler were cleaned using compressed air to ensure efficient heat dissipation.
+
+LOG ENTRY: 2024-02-03
+Technician J. Smith investigated a report of a "loud banging" sound heard when the cylinder extends.
+The issue was identified as the "Water Hammer" effect caused by the valve closing too abruptly.
+The ramp-down time on the proportional valve amplifier was adjusted from 0.1s to 0.5s. The noise was eliminated.
+
+LOG ENTRY: 2024-02-14
+Technician A. Muller repaired an oil leak observed under the main pump manifold.
+The cause was identified as the O-ring seal on the check valve, which had become brittle and cracked.
+The local line was drained, the check valve was removed, the seating surface was cleaned, and a new Viton O-ring was installed.
+A subsequent leak test was passed.
