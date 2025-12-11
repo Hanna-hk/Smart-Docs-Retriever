@@ -4,6 +4,7 @@ from exception import CustomException
 import json
 import sys
 import os
+from db_logger import RequestLogger
 import re
 from indexer import indexer
 from data_loader import make_chunks
@@ -31,13 +32,22 @@ class Searcher:
         for res in self.cosine:
             if(res['score']>threshold):
                 answers.append(self.data[res['corpus_id']])
+        log_r = RequestLogger()
         if answers==[]:
             logging.info("There are no answers for this request")
+            log_r.insertRequest(self.request)
         else:
-            answers_data = os.path.join(os.getcwd(), "data", "processed", "answers.json")
-            with open(answers_data, "w") as f:
-                json.dump(answers,f, indent=2, ensure_ascii=False)
-            logging.info("The most accurate answers were found and loaded to json file")
+            logging.info("The most accurate answers were found and inserted into the database")
+            best_ans = answers[0]
+            top_id = best_ans.get('metadata', {}).get('id', 'unknown_id')
+            top_score = self.cosine[0]['score']
+            preview = best_ans.get('data', '')[:150]
+            log_r.insertRequest(self.request, 
+                                len(answers),
+                                top_id, round(top_score,4),
+                                preview
+                                )
+            return answers
 if __name__=="__main__":
     try:
         data_path = os.path.join(os.getcwd(), "data", "raw")

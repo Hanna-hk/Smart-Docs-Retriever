@@ -33,7 +33,7 @@ echo "Installing dependencies..."
 pip install -r requirements.txt
 ARG=$1
 if [ -z "$ARG" ]; then
-    echo "Print: .\run.sh Your Request"
+    echo "Print: bash run.sh Your Request"
     exit 1
 else
     echo "Processing the request..."
