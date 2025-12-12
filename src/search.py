@@ -90,7 +90,7 @@ if __name__=="__main__":
             search.request_processing()
 
         else:
-            logging.info("There are no arguments")
+            logging.info("There are no requests")
 
     except Exception as e:
         raise CustomException(e, sys)
